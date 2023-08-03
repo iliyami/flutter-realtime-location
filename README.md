@@ -1,16 +1,26 @@
 # location_socket_test
+This project demonstrates how to connect to a WebSocket server and display locations on a map using Flutter.
 
-A new Flutter project.
+## Requirements
 
-## Getting Started
+* Flutter SDK
+* flutter_map
+* web_socket_channel
+* flutter_bloc
 
-This project is a starting point for a Flutter application.
+## Usage
 
-A few resources to get you started if this is your first Flutter project:
+1. Clone the repository.
+2. Install the dependencies.
+3. Run the application.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The application will connect to the WebSocket server and display four locations on a map.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Code
+
+The code for the application is available in the `lib` directory. The `LocationsBloc` class handles WebSocket events, such as `LocationsConnected` and `LocationsError`. The `LocationsState` class represents the state of the application, which includes the list of locations. The `MapView` widget displays the map and the markers.
+
+## License
+
+This project is licensed under the MIT License.
+
